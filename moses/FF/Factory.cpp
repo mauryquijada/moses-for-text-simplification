@@ -67,6 +67,9 @@
 #include "moses/Syntax/InputWeightFF.h"
 #include "moses/Syntax/RuleTableFF.h"
 
+#include "moses/FF/WordLengthPenaltyFeature.h"
+#include "moses/FF/PhraseLengthPenaltyFeature.h"
+
 #ifdef HAVE_VW
 #include "moses/FF/VW/VW.h"
 #include "moses/FF/VW/VWFeatureSourceBagOfWords.h"
@@ -273,6 +276,9 @@ FeatureRegistry::FeatureRegistry()
   MOSES_FNAME(SkeletonLM);
   MOSES_FNAME(SkeletonTranslationOptionListFeature);
   MOSES_FNAME(SkeletonPT);
+
+  MOSES_FNAME(PhraseLengthPenaltyFeature);
+  MOSES_FNAME(WordLengthPenaltyFeature);
 
 #ifdef HAVE_VW
   MOSES_FNAME(VW);
