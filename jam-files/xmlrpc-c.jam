@@ -62,7 +62,7 @@ else
     requirements += <define>HAVE_XMLRPC_C ;
     requirements += <cxxflags>$(xmlrpc-cxxflags) ;
     
-    local libs = [ shell_or_die "$(config) c++2 abyss-server --libs" ] ;
+    local libs = [ shell_or_die "$(config) c++2 client abyss-server --libs" ] ;
     for local i in [ SPLIT_BY_CHARACTERS $(libs) : " " ] 
     { 
       local libname = [ MATCH "-l(xmlrpc.*)" : $(i) ] ; 

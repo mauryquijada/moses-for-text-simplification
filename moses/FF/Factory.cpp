@@ -69,6 +69,7 @@
 
 #include "moses/FF/WordLengthPenaltyFeature.h"
 #include "moses/FF/PhraseLengthPenaltyFeature.h"
+#include "moses/FF/WordComplexityFeature.h"
 
 #ifdef HAVE_VW
 #include "moses/FF/VW/VW.h"
@@ -279,6 +280,7 @@ FeatureRegistry::FeatureRegistry()
 
   MOSES_FNAME(PhraseLengthPenaltyFeature);
   MOSES_FNAME(WordLengthPenaltyFeature);
+  MOSES_FNAME(WordComplexityFeature);
 
 #ifdef HAVE_VW
   MOSES_FNAME(VW);

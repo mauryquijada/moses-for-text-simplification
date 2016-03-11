@@ -24,4 +24,3 @@ void WordLengthPenaltyFeature::EvaluateInIsolation(const Phrase &source
 }
 
 }
-

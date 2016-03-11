@@ -17,7 +17,7 @@ void PhraseLengthPenaltyFeature::EvaluateWhenApplied(const Hypothesis& hypo,
                            ScoreComponentCollection* accumulator) const
 {
   TargetPhrase targetPhrase = hypo.GetCurrTargetPhrase();
-  
+
   int numChars = 0;
   for (int i = 0; i < targetPhrase.GetSize(); i++) {
     numChars += targetPhrase.GetWord(i).GetString(0).length();
@@ -27,4 +27,3 @@ void PhraseLengthPenaltyFeature::EvaluateWhenApplied(const Hypothesis& hypo,
 }
 
 }
-
